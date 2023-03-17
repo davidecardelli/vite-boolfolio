@@ -1,10 +1,11 @@
 <script>
 import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
     name: 'App',
-    components: { AppHeader },
+    components: { AppHeader, AppFooter },
     data() {
         return {}
     },
@@ -19,7 +20,9 @@ export default {
 </script>
 
 <template>
-    <AppHeader />
+    <app-header></app-header>
+
+    <app-footer></app-footer>
 </template>
 
 <style></style>
